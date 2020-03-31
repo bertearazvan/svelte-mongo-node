@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live-chat</title>
+    <style>
+        #box {
+            width: 90vw;
+            height: 80vh;
+            border: 1px solid black;
+            margin: 0 auto;
+            overflow-x: auto;
+            font-family: monospace;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #msg-div {
+            width: 90vw;
+            height: 3vh;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        #msg,
+        #client-name {
+            width: 90%;
+            height: 100%;
+        }
+
+        #send-msg {
+            width: 9%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Live-messages
+    </h1>
+    <div id="box"></div>
+    <div id="msg-div">
+        <input type="text" id="client-name">
+        <input type="text" id="msg">
+        <button id="send-msg">Send</button>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+
+</html>
